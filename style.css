@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgb(4, 39, 44)!important;
+}
+
+.navbar-collapse {
+    flex-grow: 0!important;
+}
+
+.navbar-toggler{
+    border-color: rgb(245, 181, 6);
+    background: rgba(245, 181, 6, 0.555);
+}
+
+li > a{
+    color: white!important;
+    border: 1px solid rgb(245, 181, 6);
+    padding: 10px 10px;    
+    margin-inline: 10px;
+    border-radius: 20px;
+}
+
+.nav-link-active{
+    color: white!important;
+    background: rgb(245, 181, 6);
+    border: 1px solid rgb(245, 181, 6);
+    padding: 10px 10px;    
+    margin-inline: 10px;
+
+}
+
+#seccion-principal{
+display:grid;
+}
+
+footer{
+    background-color: rgb(4, 39, 44);
+    color: white;
+    text-align: center;
+}
