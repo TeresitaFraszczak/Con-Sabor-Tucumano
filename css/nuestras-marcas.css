@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/*barra navegacion*/
 
 nav{
     background-color: rgb(4, 39, 44);
@@ -71,6 +72,7 @@ h3{
     display: flex;
 }
 
+/*footer*/
 
 footer{
     background-color: rgb(4, 39, 44);
