@@ -37,7 +37,7 @@ nav{
 transform: scale(1.2);
 }
 
-.container-fluid{
+.container-principal{
     background-color:#678e29;
 
 }
@@ -48,8 +48,65 @@ h2{
     font-size: 50px;
     text-align: center;
     padding:13px;  
+    margin:0px;
     
 }
+
+  .carrousel{
+    width: 100%;
+    max-width: 120em;
+    max-height: 50em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden;
+  }
+  
+  .carrousel .grande{
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+
+  
+  .carrousel .img{
+    width: calc( 100% / 4 );
+    min-height: 10vh;
+    transition: all 0.4s ease;    
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .carrousel .puntos{
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.carrousel .punto{
+    width: 2em;
+    height: 2em;
+    margin: 2em 1em 0;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -0.6em -0.6em 1.2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+.carrousel .h.activo{
+    background-color: lightblue;
+  }
+  
 
 h3{
     font-family: 'Allison', cursive;
@@ -90,3 +147,4 @@ footer{
 p{
     margin-top: 10px;
 }
+

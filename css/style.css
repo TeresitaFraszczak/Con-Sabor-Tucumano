@@ -40,14 +40,48 @@ transform: scale(1.2);
 
 /*fin barra de navegacion*/
 
+section{
+    background-color: #678e29;
+}
+.seccion-principal{
+display: grid;
+grid-template-columns: 3fr 1fr;
+grid-template-rows: 2rem, 2rem, 70vh;
+grid-template-areas: 
+"titulo api"
+"carrous api"
+"info mapa";
+margin-left: 50px;
+margin-right: 50px;
+}
 
-#seccion-principal{
-display:grid;
+titulo{
+    background-color:#678e29;
+}
+api{
+    background-color: rosybrown;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+carrous{
+    background-color:gray;
+}
+
+info{
+    background-color:brown;
+}
+mapa{
+    background-color:#678e29;
+    margin:5px;
 }
 h2{
+    color: white;
     font-family: 'Allison', cursive;
     font-size: 50px;
     text-align: center;
+    padding:13px;  
+    margin:0px
 
 }
 
