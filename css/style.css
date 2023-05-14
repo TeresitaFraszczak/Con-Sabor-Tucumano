@@ -4,40 +4,108 @@
     box-sizing: border-box;
 }
 
+/*barra navegacion*/
+
 nav{
     background-color: rgb(4, 39, 44);
+}
+
+.barra{
+    display: flex;
+    margin: 20px; 
 }
 
 .nav-link{
     color: white!important;
     font-size:small;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;  
-    padding: 2px 2px;
+    font-family:Verdana, Geneva, Tahoma, san-sserif;  
+    padding: 4px 4px;
+    margin: 10px;
 }
 
 .nav-link-active{
     color: rgb(245, 181, 6)!important; 
     font-size:small;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;  
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;  
+}
+.zoom{
+    transition-property: inherit;
+    transition-duration: 3s;
 }
 
-#seccion-principal{
-display:grid;
+.zoom:hover{
+transform: scale(1.2);
+}
+
+/*fin barra de navegacion*/
+
+section{
+    background-color:white;
+}
+.seccion-principal{
+display: grid;
+grid-template-columns: 3fr 1fr;
+grid-template-rows: 2rem, 2rem, 70vh;
+grid-template-areas: 
+"titulo api"
+"carrous api"
+"info mapa";
+margin-left: 50px;
+margin-right: 50px;
+}
+
+
+api{
+    background-color: rosybrown;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+carrous{
+    background-color:gray;
+}
+
+info{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+}
+mapa{
+    
+    margin:0px;
 }
 h2{
+    color:#678e29;
     font-family: 'Allison', cursive;
     font-size: 50px;
     text-align: center;
+    padding:13px;  
+    margin:0px
 
 }
+
+.seccion-secundaria{
+    background-color:#678e29;
+    color: white;
+    padding:50px;
+}
+
+/*footer*/
 
 footer{
     background-color: rgb(4, 39, 44);
     color: white;
     text-align:center;
     height: 20vh;
+    padding:20px;
 }
-a{
+
+.gh{
     color: white;
     margin: 30px;
+    padding: 6px;
+}
+p{
+    margin-top: 10px;
 }

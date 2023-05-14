@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/*barra navegacion*/
 
 nav{
     background-color: rgb(4, 39, 44);
@@ -36,19 +37,102 @@ nav{
 transform: scale(1.2);
 }
 
-.container-fluid{
-    background-color:#678e29;
+.container-principal{
+    background-color:white;
+}
+section{
+    background-color:white;
+}
+.seccion-principal{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 2rem, 2rem;
+grid-template-areas: 
+"titulo carrous"
+"info carrous";
+margin-left: 50px;
+margin-right: 50px;
+}
 
+
+api{
+    background-color: rosybrown;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+carrous{
+    background-color:gray;
+}
+
+info{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+mapa{
+    
+    margin:0px;
 }
 
 h2{
-    color: white;
+    color:#678e29;
     font-family: 'Allison', cursive;
     font-size: 50px;
     text-align: center;
     padding:13px;  
+    margin:0px;
     
 }
+
+  .carrousel{
+    width: 100%;
+    max-width: 120em;
+    max-height: 50em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    overflow: hidden;
+  }
+  
+  .carrousel .grande{
+    width: 400%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s ease;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+
+  
+  .carrousel .img{
+    width: calc( 100% / 4 );
+    min-height: 10vh;
+    transition: all 0.4s ease;    
+    
+}
+  
+  .carrousel .puntos{
+    width: 100%;
+    padding: 0.1em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.carrousel .punto{
+    width: 2em;
+    height: 2em;
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    
+  }
+  
+.carrousel .punto .activo{
+    background-color: lightblue;
+  }
+  
 
 h3{
     font-family: 'Allison', cursive;
@@ -58,19 +142,19 @@ h3{
 }
 
 .container{
-    display:grid;
+    display:flex;
     height: 80vh;
-    grid-template-columns: 48% 48%;
-    gap:2%;
-    grid-template-rows: auto;   
+      
 }
 
-.box{
-    background-color: white;
-    border-radius: 10px;
-    display: flex;
+  
+.seccion-secundaria{
+    background-color:#678e29;
+    color: white;
+    padding:50px;
 }
 
+/*footer*/
 
 footer{
     background-color: rgb(4, 39, 44);
@@ -88,3 +172,4 @@ footer{
 p{
     margin-top: 10px;
 }
+
