@@ -1,55 +1,221 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 nav{
     background-color: rgb(4, 39, 44);
+    display: inline-block ;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    justify-content: space-between;
+   }
+
+ul{
+    height: 140px;
+    margin: 0px;
+    padding: 0px;
+   } 
+
+li{
+    max-height: 100px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 20px 40px 20px 40px;
 }
 
 .nav-link{
-    color: white!important;
-    font-size:small;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;  
+    color: white;
+    font-size:small ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding: 2px 2px;
+    vertical-align: middle;
+    text-decoration: none;
 }
 
 .nav-link-active{
-    color: rgb(245, 181, 6)!important; 
+    color: rgb(245, 181, 6); 
     font-size:small;
     font-family:Verdana, Geneva, Tahoma, sans-serif;  
 }
 
-#seccion-principal{
-display:grid;
-}
-h2{
-    font-family: 'Allison', cursive;
-    font-size: 50px;
-    text-align: center;
+/* Aqui comienza el codigo del carrousell */
 
+#carrusel-caja {
+    -moz-animation: automatizacion 15s infinite linear;
+    -o-animation: automatizacion 15s infinite linear;
+    -webkit-animation: automatizacion 15s infinite linear;
+    animation: automatizacion 15s infinite linear;
+    -webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+    height: 300px;
+    width: 300%;
 }
-.container{
-    display:grid;
-    height: 80vh;
-    grid-template-columns: 48% 48%;
-    gap:2%;
+#carrusel-contenido {
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+}
+.imagenes{
+    height: 300px;
+    width: 100%;
+}
+.carrusel-elemento {
+    float: left;
+    width: 33.333%;
+}
+@-moz-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@-webkit-keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+@keyframes automatizacion {
+    0% {
+        margin-left: 0;
+    }
+    30% {
+        margin-left: 0;
+    }
+    35% {
+        margin-left: -100%;
+    }
+    65% {
+        margin-left: -100%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    95% {
+        margin-left: -200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+html{
+    background: #f5f7f8;
+}
+.band {
+    width: 90%;
+    max-width: 1240px;
+    margin: 15 auto;
+    
+    display: grid;
+    
+    grid-template-columns: 1fr;
     grid-template-rows: auto;
-   
-}
-.box{
-    border: solid 1px #ccc;
+    grid-gap: 20px;
+  }
 
-}
+  @media only screen and (min-width: 500px) {
+    .band {
+      grid-template-columns: 1fr 1fr;
+    }  
+  }
+  
+  @media only screen and (min-width: 850px) {
+    .band {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  .card {
+    background: white;
+    text-decoration: none;
+    color: #444;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+      
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+  }
+
+  
+.card:hover {
+    top: -2px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  }
+  
+  .card article {
+    padding: 20px;
+  }
+  
+  .card .thumb {
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  /* typography */
+  .card h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+  }
+  
+  .card p { 
+    line-height: 1.4;
+  }
+  
+  .card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  }
+
 
 footer{
     background-color: rgb(4, 39, 44);
     color: white;
     text-align:center;
+    vertical-align: middle;
     height: 20vh;
-}
-a{
-    color: white;
-    margin: 30px;
-}
+} 
