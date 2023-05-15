@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 nav{
     background-color: rgb(4, 39, 44);
     display: inline-block ;
@@ -213,11 +219,25 @@ html{
     margin: 2em 0 0 0;
   }
 
+.seccion-secundaria{
+    background-color:#678e29;
+    color: white;
+    padding:50px;
+}
 
 footer{
     background-color: rgb(4, 39, 44);
     color: white;
     text-align:center;
-    vertical-align: middle;
     height: 20vh;
-} 
+    padding:20px;
+}
+
+.gh{
+    color: white;
+    margin: 30px;
+    padding: 6px;
+}
+p{
+    margin-top: 10px;
+}

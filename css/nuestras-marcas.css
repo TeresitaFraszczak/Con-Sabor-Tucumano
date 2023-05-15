@@ -20,13 +20,15 @@ nav{
     font-family:Verdana, Geneva, Tahoma, san-sserif;  
     padding: 4px 4px;
     margin: 10px;
+    
 }
 
 .nav-link-active{
     color: rgb(245, 181, 6)!important; 
     font-size:small;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10px;  
+    margin: 10px;
+    text-decoration: none;  
 }
 .zoom{
     transition-property: inherit;
@@ -37,9 +39,6 @@ nav{
 transform: scale(1.2);
 }
 
-.container-principal{
-    background-color:white;
-}
 section{
     background-color:white;
 }
@@ -55,24 +54,11 @@ margin-right: 50px;
 }
 
 
-api{
-    background-color: rosybrown;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-}
-carrous{
-    background-color:gray;
-}
-
 info{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
 }
-mapa{
-    
-    margin:0px;
-}
+
 
 h2{
     color:#678e29;
