@@ -2,18 +2,32 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-nav{
+/*nav{
     background-color: rgb(4, 39, 44);
     display: inline-block ;
     align-items: center;
     height: 140px;
     width: 100%;
     justify-content: space-between;
-   }
+   }*/
 
-ul{
+nav{
+    background-color: rgb(4, 39, 44);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: #000 1px 6px 0 rgb(218, 39, 39);
+}
+
+.barra{
+    display: flex;
+    margin: 20px; 
+}  
+
+/*ul{
     height: 140px;
     margin: 0px;
     padding: 0px;
@@ -24,14 +38,14 @@ li{
     display: inline-block;
     vertical-align: middle;
     margin: 20px 40px 20px 40px;
-}
+}*/
 
 .nav-link{
     color: white;
     font-size:small ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    padding: 2px 2px;
-    vertical-align: middle;
+    padding: 4px 4px;
+    margin: 10px;
     text-decoration: none;
 }
 
@@ -39,6 +53,16 @@ li{
     color: rgb(245, 181, 6); 
     font-size:small;
     font-family:Verdana, Geneva, Tahoma, sans-serif;  
+    margin: 10px;
+    text-decoration: none; 
+}
+.zoom{
+    transition-property: inherit;
+    transition-duration: 3s;
+}
+
+.zoom:hover{
+transform: scale(1.2);
 }
 
 /* Aqui comienza el codigo del carrousell */

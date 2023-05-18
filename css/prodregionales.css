@@ -2,12 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /*barra navegacion*/
 
 nav{
     background-color: rgb(4, 39, 44);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .barra{
@@ -16,15 +20,16 @@ nav{
 }
 
 .nav-link{
-    color: white!important;
+    color: white;
     font-size:small;
     font-family:Verdana, Geneva, Tahoma, san-sserif;  
     padding: 4px 4px;
     margin: 10px;
+    text-decoration: none;
 }
 
 .nav-link-active{
-    color: rgb(245, 181, 6)!important; 
+    color: rgb(245, 181, 6); 
     font-size:small;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 10px; 
