@@ -67,7 +67,7 @@ transform: scale(1.2);
 
 /* Aqui comienza el codigo del carrousell */
 
-#carrusel-caja {
+/*#carrusel-caja {
     -moz-animation: automatizacion 15s infinite linear;
     -o-animation: automatizacion 15s infinite linear;
     -webkit-animation: automatizacion 15s infinite linear;
@@ -163,7 +163,7 @@ transform: scale(1.2);
     100% {
         margin-left: 0;
     }
-}
+}*/
 
 html{
     background: #f5f7f8;
