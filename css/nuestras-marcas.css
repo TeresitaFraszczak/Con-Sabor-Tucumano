@@ -11,7 +11,7 @@ nav{
     background-color: rgb(4, 39, 44);
     display: flex;
     justify-content: space-between;
-    padding: 8px;
+    padding: 10px;
 }
 
 .barra{
