@@ -11,7 +11,7 @@ nav{
     background-color: rgb(4, 39, 44);
     display: flex;
     justify-content: space-between;
-    padding: 8px;
+    padding: 10px;
 }
 
 .barra{
@@ -65,7 +65,7 @@ h2{
 
 .card{
     width: 330px;
-    height:430px;
+    height:530px;
     border-radius: 8px;
     background: white;
     text-decoration: none;
@@ -101,13 +101,11 @@ h2{
     font-weight: 300px;
 }
 
-.card a{
-    font-weight:500;
-
-
-
+#iconos{
+    margin: 15px;
+    justify-content: center;
+    
 }
-
 
   
 .seccion-secundaria{
