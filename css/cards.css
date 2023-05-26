@@ -12,11 +12,13 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .barra{
     display: flex;
     margin: 20px; 
+    flex-wrap: wrap;
 }
 
 .nav-link{
