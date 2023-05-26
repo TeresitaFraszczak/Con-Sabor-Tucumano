@@ -16,12 +16,12 @@ async function obtenerClima() {
     const urlIcon = ('https://openweathermap.org/img/wn/'+icon+'.png');
 
     // Actualizar el contenido del contenedor
-    const contenedorPadre = document.querySelector("section.seccion div.seccion-principal mapa.box.box5");
-    const contenedor3 = contenedorPadre.querySelector("api.box.box2");
+    const contenedorPadre = document.querySelector("section.seccion div.seccion-principal");
+    const contenedor3 = contenedorPadre.querySelector("api.api");
     contenedor3.innerHTML = `
       <div class=clima3 style="text align= center;">
-      <h4>SM de Tucumán</h4>
-      <img src="${urlIcon}" height='50px' alt="icono">
+      <h4>San Miguel de Tucumán</h4>
+      <img src="${urlIcon}" height='100px' alt="icono">
       <h4>${tiempo}</h4>
       <h4>T: ${temperatura}°C H: ${humedad}%</h4>
       </div>

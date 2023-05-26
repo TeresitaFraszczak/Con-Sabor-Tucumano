@@ -49,22 +49,26 @@ display: grid;
 grid-template-columns: 3fr 1fr;
 grid-template-rows: 2rem, 2rem, 70vh;
 grid-template-areas: 
-"titulo mapa"
-"carrous mapa"
+"titulo titulo"
+"carrous api"
 "info mapa";
 margin-left: 50px;
 margin-right: 50px;
+gap: 15px;
 }
 
 .clima3{
     align-content: center;
     justify-content: center;
-    background-color:#678e29;
+    align-items: center;
+    margin-top: 50px;
 }
-api{
-    background-color: white;
+.api{
+    grid-area: api;
     justify-content: center;
     align-content: center;
+    background-color: rgba(8, 218, 218, 0.247);
+        
 }
 /*CARROUSEL*/
 #carrusel-caja {
@@ -77,8 +81,7 @@ api{
     -ms-transition: all 0.75s ease;
     -o-transition: all 0.75s ease;
     transition: all 0.75s ease;
-    margin-top: 15px;
-    margin-bottom: 15px;
+   
     height: 300px;
     width: 300%;
 }
@@ -165,31 +168,38 @@ api{
     }
 }
 /*FIN CARROUSEL*/
-
-info{
+.titulo{
+    grid-area: titulo;
+}
+.info{
+    grid-area: info;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 18px;
     margin-right: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
 }
-mapa{
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    margin:0px;
+.mapa{
+    grid-area: mapa;  
+  
+}
+
+.carrous{
+    grid-area: carrous;
 }
 h2{
     color:#678e29;
     font-family: 'Allison', cursive;
     font-size: 50px;
-    text-align: center;
-    padding:13px;  
-    margin:0px
+    text-align: center;      
+    margin:0px;
+    letter-spacing: 3px;
 }
 .seccion-secundaria{
     display: flex;
     background-color:#678e29;
     color: white;
-    padding:50px;
+    padding:40px;
     justify-content: space-between; 
     flex-wrap: wrap;  
 }
@@ -211,4 +221,28 @@ footer{
 }
 p{
     margin-top: 10px;
+}
+
+@media only screen and (max-width: 768px){
+    .nav{
+        display: flex;
+        align-items:center;
+    }
+    .seccion-principal{
+        grid-template-columns: none;
+        grid-template-rows: 2rem, 2rem, 70vh;
+        grid-template-areas: 
+        "titulo titulo"
+        "carrous carrous"
+        "info info"
+        "api mapa";   
+
+    }
+    .map{
+        align-content: center;
+    }
+.gh{
+    margin: 3px;
+    padding: 3px;
+}
 }
