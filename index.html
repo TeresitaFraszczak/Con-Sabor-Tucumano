@@ -4,54 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- fuente externa-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" href= "css/style.css">
-    <link rel="icon" type="image/png" href= "./img/favicon.ico">
+    <link rel="icon" type="image/png" href= "./img/icons/favicon-96x96.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <title>CON SABOR TUCUMANO</title>
+    <title>Con Sabor Tucumano</title>
     <!-- logo de hitgub-->
     <script src="https://kit.fontawesome.com/e6d506b0f6.js" crossorigin="anonymous"></script>
+    <script src="/js/climagppt.js"></script>
 </head>
 <body>
     <header>
       <nav>
-        
-           <img class="zoom" src="./img/logosinfondo.png" alt="logo" width="300" height="100">
-           
-            <div class="barra" >
-                 <a class="nav-link-active" href="index.html">SOBRE TUCUMÁN</a>
-              
-                 <a class="nav-link" href="platos-tipicos.html">PLATOS TÍPICOS</a>
-              
-                 <a class="nav-link" href="prod-regionales.html">PROD. REGIONALES</a>
-              
-                 <a class="nav-link" href="prod-agricolas.html">PROD. AGRÍCOLA</a>
-               
-                 <a class="nav-link" href="nuestras-marcas.html">NUESTRAS MARCAS</a>
-              
-         </div>
-       </nav>
+        <img class="zoom" src="./img/logosinfondo.png" alt="logo" width="300" height="100">
+          <div class="barra">
+            <a class="nav-link-active" href="index.html">SOBRE TUCUMÁN</a>
+            <a class="nav-link" href="platos-tipicos.html">PLATOS TÍPICOS</a>
+            <a class="nav-link" href="prod-regionales.html">PROD. REGIONALES</a>
+            <a class="nav-link" href="prod-agricolas.html">PROD. AGRÍCOLA</a>
+            <a class="nav-link" href="nuestras-marcas.html">NUESTRAS MARCAS</a>
+          </div>
+      </nav>
     </header>
 
-            <section>
-              <div class="seccion-principal">  
-              
-               <titulo class="box box1">
-                <h2 class="animate__animated animate__slideInLeft">Sobre Tucumán</h2>              
-               </titulo>
-              
-              <!-- API DEL CLIMA -->
-               <api class="box box2">
-                 <p>API </p>
-               </api>
-              <!-- CARRUSEL DE IMAGENES -->
-               <carrous class="box box3">
-                <div id="carrusel-contenido" style="margin-top: 15px; margin-bottom: 15px;">
+    <section class="seccion">
+      <div class="seccion-principal">  
+        <titulo class="box box1">
+          <h2 class="animate__animated animate__slideInLeft">Sobre Tucumán</h2>              
+        </titulo>
+        <!-- CARRUSEL DE IMAGENES -->
+        <carrous class="box box3">
+          <div id="carrusel-contenido" style="margin-top: 15px; margin-bottom: 15px;">
                   <div id="carrusel-caja">
                       <div class="carrusel-elemento">
                           <img class="imagenes" src="/img/carrousel/CasaDeTucumán1300.jpg" >
@@ -63,11 +49,10 @@
                           <img class="imagenes" src="./img/carrousel/paisaje1300.jpg">                        
                       </div>
                   </div>
-              </div>
-            
-               </carrous>
-              <!-- INFO -->
-               <info class="box box4">
+          </div>
+        </carrous>
+        <!-- INFO -->
+        <info class="box box4">
                  <p> Conocida como el Jardín de la República, Tucumán es la puerta de entrada al norte argentino, región que integra junto con las provincias de Santiago del Estero, Salta, Jujuy y Catamarca.
 
                   <p>Su capital es San Miguel de Tucumán, una ciudad que tiene los ingredientes indispensables para que los visitantes se sientan a gusto: amabilidad de su gente, historia y arquitectura.</p>  
@@ -78,15 +63,16 @@
                   
                 Además, la provincia ofrece una gran cantidad de recursos naturales, gran cantidad de áreas naturales protegidas como así también, atractivos culturales con rasgos prehispánicos, jesuíticos o del período de auge intelectual.</p>
               <p> Te invitamos a recorrer nuestra provincia en lo que a sabores se refiere.</p>  
-              </info>
+        </info>
 
-               <mapa class="box box5">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1819691.1868421976!2d-66.64965516210178!3d-27.027500455352303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942245e9a8094c59%3A0xe9c2852a1c5d0cfd!2zVHVjdW3DoW4!5e0!3m2!1ses-419!2sar!4v1683984962674!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-               </mapa>
-              </div>
+        <mapa class="box box5">
+        <!-- API DEL CLIMA -->
+          <api class="box box2" style="text-align: center;"></api>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1819691.1868421976!2d-66.64965516210178!3d-27.027500455352303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x942245e9a8094c59%3A0xe9c2852a1c5d0cfd!2zVHVjdW3DoW4!5e0!3m2!1ses-419!2sar!4v1683984962674!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </mapa>
+      </div>
               
-              
-              <div class="seccion-secundaria">
+      <div class="seccion-secundaria">
                 <div class="sc">
                   <p> ¿QUERES SABER MAS?</p>
                 <div><a href="https://www.tucuman.gob.ar/provincia/la-provincia/">www.tucuman.gob.ar</a></div>
@@ -96,26 +82,22 @@
                 <p>¿CONSULTAS O SUGERENCIAS?</p>
                 <a href="formulario.html">Ingresa aquí</a>
               </div>
-              </div>
+      </div>
+    </section>          
+  </body>
 
-           </section>          
-       
-   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>-->
-</body>
-
-<footer>
-  <div class="icono">
-    <i class="fa-brands fa-github fa-bounce fa-lg"></i>
-  </div>
-
-  <div>
-      <a class="gh" href="https://github.com/chino1922">Chino Romano</a>
-      <a class="gh" href="https://github.com/juanvi0381">Vicente Suarez</a>
-      <a class="gh" href="https://github.com/TeresitaFraszczak">Teresita Fraszczak</a>
-      <a class="gh" href="https://github.com/PabloNeuman4247">Pablo Neuman</a>
-  </div>
-  <div>
-    <p>Derechos Reservados @2023</p>
-  </div>
-</footer>
+  <footer>
+    <div class="icono">
+      <i class="fa-brands fa-github fa-bounce fa-lg"></i>
+    </div>
+    <div>
+        <a class="gh" href="https://github.com/chino1922">Chino Romano</a>
+        <a class="gh" href="https://github.com/juanvi0381">Vicente Suarez</a>
+        <a class="gh" href="https://github.com/TeresitaFraszczak">Teresita Fraszczak</a>
+        <a class="gh" href="https://github.com/PabloNeuman4247">Pablo Neuman</a>
+    </div>
+    <div>
+      <p>Derechos Reservados @2023</p>
+    </div>
+  </footer>
 </html>

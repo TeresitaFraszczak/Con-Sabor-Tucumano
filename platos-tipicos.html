@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href= "css/cards.css">
-    <link rel="icon" type="image/png" href= "./img/favicon.ico">
+    <link rel="icon" type="image/png" href= "./img/icons/favicon-96x96.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Platos Típicos</title>
     <script src="https://kit.fontawesome.com/e6d506b0f6.js" crossorigin="anonymous"></script>
     <!-- <script src="./js/platostipicos.js"></script> -->
@@ -17,142 +18,73 @@
   <body>
     <header>
       <nav>
-             
         <img class="zoom" src="img/logosinfondo.png" alt="logo" width="300" height="100">
-        
-           <div class="barra">
-              <a class="nav-link" href="index.html">SOBRE TUCUMÁN</a>
-           
-              <a class="nav-link-active" href="platos-tipicos.html">PLATOS TÍPICOS</a>
-           
-              <a class="nav-link" href="prod-regionales.html">PROD. REGIONALES</a>
-           
-              <a class="nav-link" href="prod-agricolas.html">PROD. AGRÍCOLA</a>
-            
-              <a class="nav-link" href="nuestras-marcas.html">NUESTRAS MARCAS</a>
-         
-      </div>
-  </nav>
-    </header>
-    <!--<div id="carrusel-contenido" style="margin-top: 15px; margin-bottom: 15px;">
-      <div id="carrusel-caja">
-          <div class="carrusel-elemento">
-              <img class="imagenes" src="" >
-          </div>
-          <div class="carrusel-elemento">   
-              <img class="imagenes" src="">
-          </div>
-          <div class="carrusel-elemento">   
-              <img class="imagenes" src="">                        
-          </div>
-      </div>
-  </div>-->
-
-
-
-<div class="band">
-  
-  <!-- grid item, containing a card -->
-  <div class="item-1">
-    <a href="" class="card">
-      <div class="thumb"></div>
-      <article>
-        <h1>Post title1</h1>
-        <span>Author</span>
-      </article>
-    </a>
-  </div>
-  
-  <!-- grid item, containing a card -->
-  <div class="item-2">
-    <a href="" class="card">
-      <div class="thumb"></div>
-      <article>
-        <h1>Post title2</h1>
-        <span>Author</span>
-      </article>
-    </a>
-  </div>
-  
-  <!-- grid item, containing a card -->
-  <div class="item-3">
-    <a href="" class="card">
-      <div class="thumb"></div>
-      <article>
-        <h1>Post title3</h1>
-        <span>Author</span>
-      </article>
-    </a>
-  </div>
-  <!-- grid item, containing a card -->
-  <div class="item-4">
-    <a href="" class="card">
-      <div class="thumb"></div>
-      <article>
-        <h1>Post title4</h1>
-        <span>Author</span>
-      </article>
-    </a>
-  </div>
-  
-  <!-- grid item, containing a card -->
-  <div class="item-5">
-    <a href="" class="card">
-      <div class="thumb"></div>
-      <article>
-        <h1>Post title5</h1>
-        <span>Author</span>
-      </article>
-    </a>
-  </div>
-  
-  <!-- grid item, containing a card -->
-  <div class="item-6">
-    <a href="" class="card">
-      <div class="thumb"></div>
-      <article>
-        <h1>Post title6</h1>
-        <span>Author</span>
-      </article>
-    </a>
-  </div>
-  <div class="item-1">
-    <a href="https://design.tutsplus.com/articles/international-artist-feature-malaysia--cms-26852" class="card">
-      <div class="thumb" style="background-image: url(/img/casahistorica.jpg);"></div>
-      <article>
-        <h1>International Artist Feature: Malaysia</h1>
-        <span>Mary Winkler</span>
-      </article>
-    </a>
-  </div>
-
-  
-</div>
-      <div class="seccion-secundaria">
-          <div class="sc" >
-               <p> ¿QUERES SABER MAS?</p>
-                <div><a href="https://www.tucuman.gob.ar/provincia/la-provincia/">www.tucuman.gob.ar</a></div>
-                <div><a href="https://www.tucumanturismo.gob.ar/">www.tucumanturismo.gob.ar</a></div>
-            </div>
-            <div class="sc">
-                <p>¿CONSULTAS O SUGERENCIAS?</p>
-                <a href="formulario.html">Ingresa aquí</a>
-            </div>
+        <div class="barra">
+          <a class="nav-link" href="index.html">SOBRE TUCUMÁN</a>
+          <a class="nav-link-active" href="platos-tipicos.html">PLATOS TÍPICOS</a>
+          <a class="nav-link" href="prod-regionales.html">PROD. REGIONALES</a>
+          <a class="nav-link" href="prod-agricolas.html">PROD. AGRÍCOLA</a>
+          <a class="nav-link" href="nuestras-marcas.html">NUESTRAS MARCAS</a>
         </div>
-
-  </body>
-  <footer>
-    <div class="icono">
-      <i class="fa-brands fa-github fa-bounce fa-lg"></i>
+      </nav>
+    </header>
+    <section>
+      <div class="seccion-principal">  
+        <div>
+          <h2 class="animate__animated animate__slideInLeft">Platos Típicos</h2> 
+        </div>    
+        <div class="container">
+          <div class="card">
+            <img src="img/platos/milanesa.png" alt="milanesa" height=150px>
+            <h3>Sanguche de milanesa</h3>
+            <p>El sándwich de milanesa tucumano es una verdadera institución en la gastronomía de Tucumán. Consiste en una jugosa milanesa de carne, empanizada y frita. Se coloca en un pan sanguchero y se puede acompañar con lechuga, tomate, mayonesa. El sándwich de milanesa tucumano es una especialidad que refleja el amor de Tucumán por la carne.</p>
+            <div id="iconos">
+              <a href="https://www.facebook.com/fiesta.milanga"><i class="fa-brands fa-facebook fa-lg" style="color: #2d3034;"></i></a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/platos/empanadas.jpg" alt="empanada">
+            <h3>Empanada Tucumana</h3>
+            <p> Las empanadas tucumanas son un tesoro culinario de la provincia de Tucumán. Estas deliciosas empanadas se caracterizan por su masa fina y crujiente, y su relleno jugoso y sabroso. Están rellenas de carne picada, cebolla, huevo, y especias, lo que les brinda un sabor inigualable. ¡No puedes visitar Tucumán sin probar estas deliciosas empanadas!</p>
+            <div id="iconos">
+              <a href="https://www.facebook.com/Empanadas-Tucumanas-108026680896098"><i class="fa-brands fa-facebook fa-lg" style="color: #2d3034;"></i> </a>
+            </div>
+          </div>
+          <div class="card">
+            <img src="img/platos/humita.jpg" alt="humita" height=150px>
+            <h3>Humita en Chala</h3>
+            <p>La humita en chala es una deliciosa preparación típica de Tucumán. Consiste en una masa suave y dulce de choclo tierno, mezclada con cebolla, ají y condimentos. Esta mezcla se envuelve en hojas de chala y se cocina al vapor, lo que le da a las humitas su distintivo aroma y sabor. Son una explosión de sabores auténticos y una delicia para el paladar.</p>
+            <div id="iconos">
+              <a href="https://www.facebook.com/profile.php?id=100063655762324"><i class="fa-brands fa-facebook fa-lg" style="color: #2d3034;"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="seccion-secundaria">
+      <div class="sc" >
+        <p> ¿QUERES SABER MAS?</p>
+        <div><a href="https://www.tucuman.gob.ar/provincia/la-provincia/">www.tucuman.gob.ar</a></div>
+        <div><a href="https://www.tucumanturismo.gob.ar/">www.tucumanturismo.gob.ar</a></div>
+      </div>
+      <div class="sc">
+        <p>¿CONSULTAS O SUGERENCIAS?</p>
+        <a href="formulario.html">Ingresa aquí</a>
+      </div>
     </div>
-    <div>
+  </body>
+    <footer>
+      <div class="icono">
+        <i class="fa-brands fa-github fa-bounce fa-lg"></i>
+      </div>
+      <div>
         <a class="gh" href="https://github.com/chino1922">Chino Romano</a>
         <a class="gh" href="https://github.com/juanvi0381">Vicente Suarez</a>
         <a class="gh" href="https://github.com/TeresitaFraszczak">Teresita Fraszczak</a>
         <a class="gh" href="https://github.com/PabloNeuman4247">Pablo Neuman</a>
-    </div>
-    <div>
-      <p>Derechos Reservados @2023</p>
-    </div>
-  </footer>
+      </div>
+      <div>
+        <p>Derechos Reservados @2023</p>
+      </div>
+    </footer>
 </html>

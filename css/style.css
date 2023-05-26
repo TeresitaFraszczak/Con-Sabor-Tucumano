@@ -4,21 +4,19 @@
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 /*barra navegacion*/
-
 nav{
     background-color: rgb(4, 39, 44);
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    flex-wrap: wrap;
 }
-
 .barra{
     display: flex;
-    margin: 20px; 
+    margin: 20px;
+    flex-wrap: wrap; 
 }
-
 .nav-link{
     color: white;
     font-size:small;
@@ -27,7 +25,6 @@ nav{
     margin: 10px;
     text-decoration: none;  
 }
-
 .nav-link-active{
     color: rgb(245, 181, 6); 
     font-size:small;
@@ -39,11 +36,9 @@ nav{
     transition-property: inherit;
     transition-duration: 3s;
 }
-
 .zoom:hover{
 transform: scale(1.2);
 }
-
 /*fin barra de navegacion*/
 
 section{
@@ -54,19 +49,22 @@ display: grid;
 grid-template-columns: 3fr 1fr;
 grid-template-rows: 2rem, 2rem, 70vh;
 grid-template-areas: 
-"titulo api"
-"carrous api"
+"titulo mapa"
+"carrous mapa"
 "info mapa";
 margin-left: 50px;
 margin-right: 50px;
 }
 
-
+.clima3{
+    align-content: center;
+    justify-content: center;
+    background-color:#678e29;
+}
 api{
-    background-color: rosybrown;
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end: 3;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
 }
 /*CARROUSEL*/
 #carrusel-caja {
@@ -97,7 +95,6 @@ api{
     float: left;
     width: 33.333%;
 }
-
 @-moz-keyframes automatizacion {
     0% {
         margin-left: 0;
@@ -167,7 +164,6 @@ api{
         margin-left: 0;
     }
 }
-
 /*FIN CARROUSEL*/
 
 info{
@@ -176,7 +172,9 @@ info{
     margin-right: 20px;
 }
 mapa{
-    
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
     margin:0px;
 }
 h2{
@@ -186,22 +184,19 @@ h2{
     text-align: center;
     padding:13px;  
     margin:0px
-
 }
-
 .seccion-secundaria{
+    flex-wrap: wrap;
     display: flex;
     background-color:#678e29;
     color: white;
     padding:50px;
     justify-content: space-between;    
 }
-
 .sc{
     margin-inline: 60px;
 }
 /*footer*/
-
 footer{
     background-color: rgb(4, 39, 44);
     color: white;
@@ -209,7 +204,6 @@ footer{
     height: 20vh;
     padding:20px;
 }
-
 .gh{
     color: white;
     margin: 30px;
