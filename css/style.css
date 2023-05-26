@@ -12,11 +12,13 @@ nav{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
 .barra{
     display: flex;
-    margin: 20px; 
+    margin: 20px;
+    flex-wrap: wrap; 
 }
 
 .nav-link{
@@ -61,9 +63,18 @@ margin-left: 50px;
 margin-right: 50px;
 }
 
+.clima3{
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: rgb(245, 181, 6);
+}
 
 api{
-    background-color: rosybrown;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
     grid-column-start: 2;
     grid-row-start: 1;
     grid-row-end: 3;
@@ -190,6 +201,7 @@ h2{
 }
 
 .seccion-secundaria{
+    flex-wrap: wrap;
     display: flex;
     background-color:#678e29;
     color: white;
